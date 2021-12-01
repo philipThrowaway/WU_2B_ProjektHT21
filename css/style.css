@@ -49,7 +49,31 @@ nav a:hover {
     color: rgba(255, 255, 255, 1.0);
 }
 
+footer {
+    display: flex;
+    flex-direction: row;
+
+    background-color: rgba(255, 255, 255, 0.075);
+    color: white;
+
+    padding: 2em 5em 2em 5em;
+}
+
+/*
+    Good
+*/
+#wrapper {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+}
+
 #hero_wrapper {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+
     width: 100%;
     height: 100%;
 
@@ -84,6 +108,7 @@ nav a:hover {
 
     font-size: 1.2rem;
     font-weight: 600;
+    text-decoration: none;
 
     padding: 1rem;
     width: fit-content;
@@ -92,23 +117,19 @@ nav a:hover {
 .button.normal {
     color: white;
     border: 2px solid white;
-
-    border-radius: 10px;
-
-    transition: 0.35s;
 }
 
 .button.normal:hover {
-    opacity: 0.75;
+    opacity: 0.6;
 }
 
 .button.normal:active {
-    background-color: white;
-    opacity: 1;
-    color: black;
-    border: 2px solid rgba(0, 0, 0, 0);
+    opacity: 0.8;
 }
 
+/*
+    Typography
+*/
 
 h1 {
     font-size: 5rem;
@@ -124,3 +145,12 @@ h2 {
     font-variant: small-caps;
     letter-spacing: 10px;
 }
+
+/*
+    Animations
+*/
+
+@keyframes fadeIn {
+    from {opacity: 0.0;}
+    to {opacity: 1.0;}
+  }
