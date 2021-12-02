@@ -52,11 +52,23 @@ nav a:hover {
 footer {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 
-    background-color: rgba(255, 255, 255, 0.075);
+    gap: 5em;
+
+    background-color: black;
     color: white;
 
-    padding: 2em 5em 2em 5em;
+    padding: 2.5em 5em 2.5em 5em;
+}
+
+footer h1 {
+    font-size: 1rem;
+}
+
+footer p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 /*
@@ -67,7 +79,7 @@ footer {
     flex-direction: column;
 
     width: 100%;
-    height: 100%;
+    height: fit-content;
 }
 
 #hero_wrapper {
@@ -75,16 +87,16 @@ footer {
     animation-duration: 2s;
 
     width: 100%;
-    height: 100%;
+    height: 100vh;
 
     display: flex;
     flex-direction: row;
     align-items: center;
 
-    background: url(../img/Background.png);
+    background: url(../img/test.png);
     background-repeat: no-repeat;
     background-position: right;
-    background-size: contain;
+    background-size: cover;
 }
 
 #hero_body {
@@ -153,4 +165,30 @@ h2 {
 @keyframes fadeIn {
     from {opacity: 0.0;}
     to {opacity: 1.0;}
-  }
+}
+
+/*
+    Scrollbar
+*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 14px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(50, 50, 50);
+    border-radius: 14px;
+    transition: 0.35s;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(75, 75, 75);
+}
