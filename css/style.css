@@ -13,6 +13,7 @@
 
 html, body {
     background-color: black;
+    overflow: overlay;
 
     width: 100%;
     height: 100%;
@@ -25,7 +26,7 @@ nav {
     /*justify-content: space-around;*/
 
     color: white;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
 
     width: 100%;
     height: 70px;
@@ -56,7 +57,7 @@ footer {
 
     gap: 5em;
 
-    background-color: black;
+    background-color: rgba(99, 105, 251, 0.02);
     color: white;
 
     padding: 2.5em 5em 2.5em 5em;
@@ -74,6 +75,7 @@ footer p {
 /*
     Good
 */
+
 #wrapper {
     display: flex;
     flex-direction: column;
@@ -113,6 +115,7 @@ footer p {
 /*
     Input
 */
+
 .button {
     display: flex;
     align-items: center;
@@ -144,18 +147,76 @@ footer p {
 */
 
 h1 {
-    font-size: 5rem;
+    font-size: 2rem;
     font-weight: 700;
     color: white;
 }
 
+h1 strong {
+    font-size: 5rem;
+}
+
 h2 {
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 3px;
 
     font-variant: small-caps;
+}
+
+h2 strong {
+    font-size: 2rem;
+    font-weight: 300;
     letter-spacing: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255, 0.75);
+}
+
+/*
+    General classes
+*/
+
+.content {
+    display: flex;
+    background-color: rgba(99, 105, 251, 0.05);
+    padding: 5em;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    width: 100%;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+
+    width: 100%;
+}
+
+.gap_section {
+    gap: 5em;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    display: block;
+    width: 75px;
+    height: 100%;
+
+    opacity: 0.3;
 }
 
 /*
@@ -171,24 +232,21 @@ h2 {
     Scrollbar
 */
 
-/* width */
 ::-webkit-scrollbar {
     width: 14px;
 }
-  
-  /* Track */
+
 ::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0);
 }
-  
-  /* Handle */
+
 ::-webkit-scrollbar-thumb {
-    background: rgb(50, 50, 50);
+    background: rgb(255, 255, 255, 0.1);
+    border: 1px solid rgb(255, 255, 255, 0.1);
     border-radius: 14px;
     transition: 0.35s;
 }
-  
-  /* Handle on hover */
+
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(75, 75, 75);
+    background: rgb(255, 255, 255, 0.3);
 }
