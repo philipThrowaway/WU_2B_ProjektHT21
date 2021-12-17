@@ -10,6 +10,12 @@
 
 :root {
     --light: rgb(248, 248, 236);
+    
+    --white-10: rgba(255, 255, 255, 0.1);
+    --white-30: rgba(255, 255, 255, 0.3);
+
+    --black-10: rgba(0, 0, 0, 0.1);
+    --black-30: rgba(0, 0, 0, 0.3);
 }
 
 
@@ -144,34 +150,30 @@ html, body {
     height: 100%;
 }
 
+/*
+
+*/
+
 nav {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     gap: 2em;
 
     color: white;
-    background: linear-gradient(black, rgba(0, 0, 0, 0.0));
+    background-color: var(--black-10);
+    border: 1px solid var(--black-10);
 
-    width: 100%;
-    padding: 20px 5em 20px 5em;
+    height: 100%;
+    padding: 1em;
     position: fixed;
 
     z-index: 99999;
 }
 
-nav a {
-    display: flex;
-
-    height: 100%;
-
-    color: rgba(255, 255, 255, 0.5);
-    text-decoration: none;
-    transition: 0.35s;
-}
-
-nav a:hover {
-    color: rgba(255, 255, 255, 1.0);
+.nav-icon {
+    font-size: 1.5rem;
+    color: var(--black-30);
 }
 
 footer {
