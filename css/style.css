@@ -4,8 +4,6 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-
-    font-family: 'Inter', sans-serif;
 }
 
 :root {
@@ -172,6 +170,7 @@ p {
     color: rgb(255, 255, 255, 0);
     filter: saturate(50%);
 
+    font-family: sofia-pro, sans-serif;
     text-shadow: 0px 0px rgba(0, 0, 0, 0);
 
     min-height: 300px;
@@ -202,7 +201,6 @@ p {
 
 html, body {
     background-color: var(--light);
-    overflow: overlay;
 
     width: 100%;
     height: 100%;
@@ -235,7 +233,7 @@ nav {
 }
 
 .nav-icon:hover {
-    color: var(--accent);
+    color: var(--black-30);
     opacity: 0.75;
 }
 
